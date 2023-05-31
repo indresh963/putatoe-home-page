@@ -1,38 +1,275 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+
+/* custome css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color:rgb(108, 196, 166);
+  --secondary-color:white;
+  --tertiary-color:rgb(21, 141, 101);
+  --tetra-color:rgb(209, 238, 228);
+  --banner-heading-color:rgb(108, 26, 167);
+  --background-color:ghostwhite;
+  --main-font:'Oswald', sans-serif;
+  --second-font: 'Lato', sans-serif;
+}
+
+h1{
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  color:var(--banner-heading-color);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5rem;
+}
+
+h5{
+  font-family: var(--main-font);
+  color:var(--banner-heading-color);
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+h2{
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  color:var(--banner-heading-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
+p{
+  font-family: var(--second-font);
+  color:var(--primary-color);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+
+.main-btn{
+  border:2px solid var(--primary-color);
+  border-radius: 50rem;
+  padding:0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: var(--main-font);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-transition:all 0.4s ease-in-out 0s ;
+  -moz-transition:all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -ms-transition:all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.main-btn:hover{
+  background-color: var(--primary-color);
+  color:var(--secondary-color)
+}
+
+.second-btn{
+  border:2px solid var(--primary-color);
+  border-radius: 50rem;
+  padding:0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+  -webkit-transition:all 0.4s ease-in-out 0s ;
+  -moz-transition:all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -ms-transition:all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.second-btn:hover{
+  color:var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/* custome css */
+
+/* header  */
+
+.header-container{
+  background-color: var(--primary-color);
+}
+
+.header-container #upper-part span, #mic{
+  color:var(--secondary-color);
+  font-size: 1.5rem;
+
+}
+
+#address{
+  border-radius: 0.5rem;
+  border:0.5px solid var(--secondary-color);
+  font-family: var(--second-font);
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color:var(--secondary-color)!important;
+}
+
+#address::placeholder{
+  color:var(--secondary-color);
+  font-family: var(--second-font);
+  font-weight: 500;
+}
+
+input:focus{
+  box-shadow: unset !important;
+}
+
+#bell{
+  position: relative;
+}
+
+#bell::after{
+  position: absolute;
+  right: -30%;
+  top: 20%;
+  padding: 0px 6px;
+  border-radius: 100%;
+  content: '1';
+  background-color: red;
+  color: var(--secondary-color);
+  font-size: 0.7rem
+}
+
+#search{
+  border:0;
+  outline:0;
+  box-shadow: 0;
+  font-family: var(--second-font);
+  font-weight: 500;
+  padding-right: 0;
+}
+
+#dummy-input{
+  background-color: var(--secondary-color);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+#search-icon{
+  font-size:1.2rem;
+  color:var(--primary-color);
+}
+
+#search-header{
+  position: sticky;
+}
+/* header  */
+
+/* navigation */
+nav span, #features span{
+  font-size: 1.5rem;
+  color:var(--primary-color);
+}
+
+.nav-link p,#features p{
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.nav-link{
+  padding-top: 0.25rem;
+}
+
+nav{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 1px;
+  background-color: var(--secondary-color);
+}
+
+#img-nav img{
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+/* navigation */
+
+/* floating-button */
+
+#floating-button{
+  padding:0.8rem;
+  background-color: var(--tertiary-color);
+  border-radius: 100%;
+  box-shadow: 0 0 3px;
+  border:unset;
+  position: fixed;
+  bottom:15%;
+  right:10%;
+}
+/* floating-button */
+
+/* partners */
+.heading{
+  background-color: var(--tetra-color);
+}
+
+.heading p{
+  color:var(--tertiary-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#sub-heading p{
+  font-size: 1.18;
+  color:grey;
+  border-bottom: 1px solid grey;
+}
+
+.horizontal-menu{
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.horizontal-menu div.card{
+  display: inline-block;
+   width: 120px;
+   height: 162px;
+}
+
+.horizontal-menu div.card:not(:first-of-type){
+  margin-left: 1rem;
+}
+.horizontal-menu div.card-body{
   text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.horizontal-menu p.card-title{
+  white-space:normal;
+  margin-bottom: 0;
+  color:grey;
+}
+/* partners */
+
+/* services */
+.badge p{
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+figcaption{
+  font-family: var(--second-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color:black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* services */

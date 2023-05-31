@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/putatoe-home-page/static/css/main.b00f05f2.css",
+    "main.js": "/putatoe-home-page/static/js/main.4218370a.js",
+    "static/js/787.ae6770d9.chunk.js": "/putatoe-home-page/static/js/787.ae6770d9.chunk.js",
+    "static/media/veggies.jpg": "/putatoe-home-page/static/media/veggies.0929e9d5fed7597b1dbc.jpg",
+    "static/media/construction.jpg": "/putatoe-home-page/static/media/construction.deb51f4c5b8603a400d9.jpg",
+    "static/media/consultancy.jpg": "/putatoe-home-page/static/media/consultancy.88276c22f12788fb3be7.jpg",
+    "static/media/banner.png": "/putatoe-home-page/static/media/banner.f841a3220af5358f9d49.png",
+    "static/media/logo.png": "/putatoe-home-page/static/media/logo.aa9da4f6375a03f8abbe.png",
+    "index.html": "/putatoe-home-page/index.html",
+    "main.b00f05f2.css.map": "/putatoe-home-page/static/css/main.b00f05f2.css.map",
+    "main.4218370a.js.map": "/putatoe-home-page/static/js/main.4218370a.js.map",
+    "787.ae6770d9.chunk.js.map": "/putatoe-home-page/static/js/787.ae6770d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b00f05f2.css",
+    "static/js/main.4218370a.js"
+  ]
+}
